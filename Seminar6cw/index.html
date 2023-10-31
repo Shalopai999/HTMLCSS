@@ -1,41 +1,48 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>New site</title>
+    <script src="https://kit.fontawesome.com/58af43a477.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="top">
-        <div class="header">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Blog</a>
-            <a href="#">Contact</a>
+    <header class="header">
+        <div class="container">
+            <nav class="header__nav">
+                <a href="#" class="header__link">Home</a>
+                <a href="#" class="header__link">About</a>
+                <a href="#" class="header__link">Services</a>
+                <a href="#" class="header__link">Blog</a>
+                <a href="#" class="header__link">Contact</a>
+            </nav>
         </div>
-        <div class="top__content">
-            <div class="top__info">
+    </header>
+    <main class="main">
+        <div class="container flex">
+            <div class="top__left">
                 <h3 class="subtitle">Next genaretion platform</h3>
                 <h1 class="title">Artificial intelligence & Syber security</h1>
                 <p class="text">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
-                <div class="top__buttons">
-                    <button class="button">Get Started</button>
-                    <button class="button"><svg width="20" height="25" viewBox="0 0 20 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M20 12.5L0.500001 24.1913L0.500002 0.808657L20 12.5Z" fill="white"/>
-                        </svg>Watch Video
-                        </button>
-                </div>
+                <button class="button">Get Started</button>
+                <button class="button"><i class="fa-sharp fa-solid fa-play"></i>Watch Video</button>
             </div>
-            <img src="img/top.svg" alt="top">
+            <div class="top__right">
+                <img src="img/top.svg" alt="top">
+            </div>
         </div>
-        <div class="top__logos">
+    </main>
+    <selection class="logo">
+        <div class="container flex">
             <img src="img/logo1.svg" alt="logos">
             <img src="img/logo2.svg" alt="logos">
             <img src="img/logo3.svg" alt="logos">
             <img src="img/logo4.svg" alt="logos">
         </div>
-        </div>
-    </body>
+    </selection>
+</body>
 </html>
