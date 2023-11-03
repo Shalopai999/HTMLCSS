@@ -71,6 +71,10 @@ body {
     margin-bottom: 50px;
 }
 
+.size16 {
+    font-size: 16px;
+}
+
 .button {
     color: var(--ffffff, #FFF);
     font-family: Open Sans;
@@ -92,6 +96,7 @@ body {
 .flex {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .top__left, .top__right {
@@ -105,4 +110,110 @@ body {
 
 .main {
     margin-bottom: 200px;
+}
+
+.logo {
+    margin-bottom: 256px;
+}
+
+.title__left {
+    color: var(--ffffff, #FFF);
+    font-family: Open Sans;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%; /* 52px */
+    margin-bottom: 30px;
+}
+
+.item {
+    border-radius: 10px;
+    background: #132035;
+    padding: 30px;
+    display: grid;
+    justify-items: center;
+    gap: 30px;
+}
+
+.item_big {
+    grid-column: span 2;
+    grid-row: span 2;
+    gap: 60px;
+}
+
+.content {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, 362px);
+    justify-content: center;
+    padding-top: 264px;
+    padding-bottom: 243px;
+}
+
+.heading {
+    color: var(--ffffff, #FFF);
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 125%; /* 31.25px */
+    opacity: 0.7;
+}
+
+.item__text {
+    color: var(--ffffff, #FFF);
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%; /* 25.6px */
+    opacity: 0.7;
+}
+
+.title40px {
+    margin-bottom: 40px;
+}
+
+.text20px {
+    margin-bottom: 20px;
+}
+
+.footer__flex {
+    align-items: start;
+}
+
+.link__footer {
+    color: var(--ffffff, #FFF);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 33px;
+    width: 362px;
+}
+
+.info {
+    font-size: 14px;
+    justify-content: start;
+}
+
+.footer__img {
+    margin-right: 5px;
+}
+
+.img__about {
+    margin-right: 24px;
+}
+
+.footer__text {
+    color: var(--ffffff, #FFF);
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 100;
+    line-height: normal;
+    opacity: 0.6;
 }
