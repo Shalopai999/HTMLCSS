@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    font-family: 'Lato', sans-serif;
+}
+
+.header {
+    height: 75px;
+    flex-shrink: 0;
+    background-color: #222;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1600px;
+}
+
+.header__nav {
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    margin-left: 231px;
+    margin-right: 240px;
+}
+
+.logo__img {
+    margin-right: 41px;
+}
+
+.main {
+    background-color: #F1E4E6;
+    margin-bottom: 65px;
+}
+
+.brand {
+    margin-right: 16px;
+    width: 12px;
+    height: 92px;
+    flex-shrink: 0;
+    background-color: #F16D7F;
+}
+
+.text__brand {
+    color: #222;
+    font-family: Lato;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.text__lux {
+    color: #222;
+    font-family: Lato;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.text__fash {
+    color: #F16D7F;
+    font-family: Lato;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.flex {
+    display: flex;
+    align-items:start;
+}
+
+.main__right {
+    display: flex;
+    align-items:start;
+    margin-top: 290px;
+}
+
+.text__main {
+    display: flex;
+    width: 377px;
+    height: 93px;
+    align-items: center;
+    align-content: stretch;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.content {
+    background: #FFF;
+}
+
+.menu {
+    width: 360px;
+    height: 260px;
+    flex-shrink: 0;
+    margin: 15px;
+    background-color: rgba(33, 22, 22, 0.70);
+}
+
+.menu__big {
+    width: 1140px;
+    height: 180px;
+    flex-shrink: 0;
+    margin: 15px;
+    background-color: rgba(33, 22, 22, 0.70);
+}
+
+.content__nav {
+    margin-right: 215px;
+    margin-left: 215px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 96px;
+}
+
+.content__subtitle {
+    color: #222;
+    font-family: Lato;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.content__text {
+    color: #9F9F9F;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.content__title {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 49px;
+}
+
+.cards {
+    display: flex;
+    margin-left: 215px;
+    margin-right: 215px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 25px;
+    width: 360px;
+    height: 581px;
+    flex-shrink: 0;
+    background-color: #F8F8F8;
+}
+
+.img2 {
+    background-color: #F7E4E2;
+}
+
+.card__flex {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.info__card {
+    background-color: #F8F8F8;
+}
+
+.tit__card {
+    color: #000;
+    font-family: Lato;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-top: 24px;
+
+}
+
+.text__card {
+    color: #5D5D5D;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin: 16px;
+}
+
+.price__card {
+    color: #F16D7F;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-bottom: 24px;
+}
+
+.footer__but {
+    color: #F26376;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 212px;
+    height: 48px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #FF6A6A;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 48px;
+    margin-bottom: 60px;
+}
