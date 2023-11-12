@@ -33,6 +33,10 @@ body {
     margin-right: 41px;
 }
 
+.header__mini2 {
+    display: none;
+}
+
 .main {
     background-color: #F1E4E6;
     margin-bottom: 65px;
@@ -44,7 +48,7 @@ body {
     height: 92px;
     flex-shrink: 0;
     background-color: #F16D7F;
-    margin-left: 64px;
+    margin-left: 57px;
 }
 
 .text__brand {
@@ -265,5 +269,59 @@ body {
 
     .card {
         width: 49%;
+    }
+}
+
+@media (max-width: 767px) and (min-width: 320px) {
+
+    .container {
+        padding: 0% 2% 0;
+    }
+
+    .main__left {
+        display: none;
+    }
+
+    .header__mini1 {
+        display: none;
+    }
+
+    .header__mini2 {
+        display: block;
+    }
+    
+    .text__brand {
+        font-size: 38px;
+    }
+
+    .text__lux {
+        font-size: 20px;
+    }
+
+    .text__fash {
+        font-size: 20px;
+    }
+
+    .text__main {
+        width: 250px;
+    }
+
+    .main__right {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .brand {
+        margin-left: 0;
+    }
+
+    .menu {
+        padding: 10px;
+        width: 100%;
+    }
+
+    .card {
+        width: 100%;
+        margin: 10px;
     }
 }
