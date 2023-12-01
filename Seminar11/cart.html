@@ -53,40 +53,74 @@
       </div>
     </nav>
     <div class="cart">
-      <div class="container">
+      <div class="container cart__flex">
         <div class="cart__product">
-          <div class="product__in__cart">
-            <img class="product__img" src="img/card3.svg" alt="img" />
-            <div class="product__card">
-              <div class="product__header">
-                <h3 class="product__title">MANGO PEOPLE T-SHIRT</h3>
-                <img class="x" src="img/x.svg" alt="img" />
+          <div class="cart__product__in__cart">
+            <img class="cart__product__img" src="img/card3.svg" alt="img" />
+            <div class="cart__product__card">
+              <div class="cart__product__header">
+                <h3 class="cart__product__title">MANGO PEOPLE T-SHIRT</h3>
+                <img class="cart__x" src="img/x.svg" alt="img" />
               </div>
-              <div class="product__info">
-                <div class="product__info__item">Price: <span class="product__price">$300</span></div>
-                <div class="product__info__item">Color: Red</div>
-                <div class="product__info__item">Size: Xl</div>
-                <div class="product__info__item">Quantity:</div>
+              <div class="cart__product__info">
+                <p class="cart__product__info__item">
+                  Price: <span class="cart__product__price">$300</span>
+                </p>
+                <p class="cart__product__info__item">Color: Red</p>
+                <p class="cart__product__info__item">Size: Xl</p>
+                <p class="cart__product__info__item">
+                  Quantity:
+                  <input
+                    class="cart__product__quantity"
+                    type="number"
+                    value="2"
+                  />
+                </p>
               </div>
             </div>
           </div>
-          <div class="product__in__cart">
-            <img class="product__img" src="img/card13.svg" alt="img" />
-            <div class="product__card">
-              <div class="product__header">
-                <h3 class="product__title">MANGO PEOPLE T-SHIRT</h3>
-                <img class="x" src="img/x.svg" alt="img" />
+          <div class="cart__product__in__cart">
+            <img class="cart__product__img" src="img/card13.svg" alt="img" />
+            <div class="cart__product__card">
+              <div class="cart__product__header">
+                <h3 class="cart__product__title">MANGO PEOPLE T-SHIRT</h3>
+                <img class="cart__x" src="img/x.svg" alt="img" />
               </div>
-              <div class="product__info">
-                <div class="product__info__item">Price: <span class="product__price">$300</span></div>
-                <div class="product__info__item">Color: Red</div>
-                <div class="product__info__item">Size: Xl</div>
-                <div class="product__info__item">Quantity:</div>
+              <div class="cart__product__info">
+                <div class="cart__product__info__item">
+                  Price: <span class="cart__product__price">$300</span>
+                </div>
+                <div class="cart__product__info__item">Color: Red</div>
+                <div class="cart__product__info__item">Size: Xl</div>
+                <p class="cart__product__info__item">
+                  Quantity:
+                  <input
+                    class="cart__product__quantity"
+                    type="number"
+                    value="2"
+                  />
+                </p>
               </div>
             </div>
+          </div>
+          <div class="cart__product__buttons">
+            <div class="cart__product__buttons__btn site__but">CLEAR SHOPPING CART</div>
+            <div class="cart__product__buttons__btn site__but">CONTINUE SHOPPING</div>
           </div>
         </div>
-        <div class="cart__adress"></div>
+        <div class="cart__adress">
+          <h2 class="cart__adress__head">SHIPPING ADRESS</h2>
+          <input class="cart__adress__input" type="text" placeholder="Country" value="Bangladesh"/>
+          <input class="cart__adress__input" type="text" placeholder="State"/>
+          <input class="cart__adress__input" type="text" placeholder="Postcode / Zip"/>
+          <a href="registration.html" class="cart__adress__but site__but">GET A QUOTE</a>
+          <div class="cart__adress__check">
+            <p class="sub-total">SUB TOTAL<span class="sub-total__price">$900</span></p>
+            <p class="grand-total">GRAND TOTAL<span class="grand-total__price">$900</span></p>
+            <hr width="100%" color="#E2E2E2">
+            <a href="#" class="cart__adress__check__but site__but">PROCEED TO CHECKOUT</a>
+          </div>
+        </div>
       </div>
     </div>
     <div class="footer__subscribe">

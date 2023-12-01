@@ -33,6 +33,12 @@ body {
   font-family: "Lato", sans-serif;
 }
 
+.site__but:hover {
+  background-color: $color__site;
+  color: white;
+  transition: all 0.3s;
+}
+
 .header {
   height: 75px;
   flex-shrink: 0;
@@ -302,11 +308,10 @@ body {
   align-items: center;
   justify-content: center;
   border: 1px solid $color__site;
-  text-decoration: none;
 }
 
 .footer__but:hover {
-  background-color: #f26376;
+  background-color: $color__site;
   color: white;
   transition: all 0.3s;
 }
@@ -874,55 +879,287 @@ body {
 .cart {
   margin-top: 96px;
   margin-bottom: 128px;
+
+  &__flex {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__x {
+    margin-top: 6px;
+    margin-right: 22px;
+    margin-left: 56px;
+    cursor: pointer;
+  }
+
+  &__product {
+    margin-right: 128px;
+    &__in__cart {
+      display: flex;
+      max-width: 652px;
+      margin-bottom: 40px;
+      box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
+    }
+
+    &__img {
+      height: 302px;
+    }
+
+    &__header {
+      display: flex;
+      margin-bottom: 42px;
+      margin-top: 22px;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    &__card {
+      padding-left: 32px;
+      max-width: 390px;
+    }
+
+    &__info__item {
+      margin-bottom: 6px;
+      color: #575757;
+      font-size: 22px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+
+    &__price {
+      color: $color__site;
+    }
+
+    &__title {
+      color: #222;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      width: 262px;
+    }
+
+    &__quantity {
+      width: 44px;
+      color: #656565;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      padding-left: 16px;
+      margin-left: 24px;
+    }
+
+    &__buttons {
+      margin-top: 72px;
+      max-width: 652px;
+      display: flex;
+      justify-content: space-between;
+
+      &__btn {
+        color: #4a4a4a;
+        padding: 16px 40px;
+        border: 1px solid #a4a4a4;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__adress {
+    display: flex;
+    flex-direction: column;
+    &__head {
+      color: #222;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+      margin-bottom: 20px;
+      margin-top: 16px;
+    }
+
+    &__input {
+      color: #222;
+      font-size: 13px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+      width: 360px;
+      padding: 14px 16px;
+      margin-bottom: 20px;
+    }
+
+    &__input::-webkit-input-placeholder {
+      color: #b1b1b1;
+    }
+
+    &__but {
+      padding: 10px 16px;
+      border: 1px solid #a4a4a4;
+      color: #4a4a4a;
+      font-size: 11px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+      width: 108px;
+      display: flex;
+      justify-content: center;
+    }
+
+    &__check {
+      background-color: #f5f3f3;
+      max-width: 360px;
+      margin-top: 56px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      padding: 44px;
+
+      &__but {
+        color: #4a4a4a;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        padding: 16px 40px;
+        border: 1px solid #a4a4a4;
+        cursor: pointer;
+        margin-top: 16px;
+      }
+
+      .sub-total {
+        color: #4a4a4a;
+        font-size: 11px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-bottom: 12px;
+        &__price {
+          margin-left: 20px;
+        }
+      }
+
+      .grand-total {
+        color: #222;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        margin-bottom: 20px;
+        &__price {
+          color: #f16d7f;
+          font-weight: 700;
+          margin-left: 20px;
+        }
+      }
+
+      .check-border {
+        border: 1px solid #e2e2e2;
+      }
+    }
+  }
 }
 
-.product__in__cart {
+.reg__flex {
   display: flex;
-  width: 58%;
-  margin-bottom: 40px;
-  box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
+  padding-top: 64px
+  ;
 }
 
-.product__img {
-  height: 302px;
-}
+.reg {
+  &__input {
+    display: flex;
+    flex-direction: column;
+    max-width: 360px;
+    &__head {
+      color: #222;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+    }
+    &__input {
+      color: #222;
+      font-size: 13px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+      padding: 14px 16px;
+      margin-top: 20px;
+    }
+    &__input::-webkit-input-placeholder {
+      color: #b1b1b1;
+    }
+    &__radio {
+      display: flex;
+      align-content: center;
+      &__check {
+        color: #000;
+        font-size: 11px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        margin: 32px 20px 32px 10px;
+      }
+    }
 
-.product__header {
-  display: flex;
-  margin-bottom: 42px;
-  margin-top: 22px;
-  justify-content: space-between;
-  align-items: flex-start;
-}
+    &__help {
+      color: #b1b1b1;
+      font-size: 13px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+      margin-top: 15px;
+    }
 
-.product__card {
-  margin-left: 31px;
-  width: 100%;
-}
+    &__but {
+      padding: 16px 20px 16px 30px;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      color: #4a4a4a;
+      border: 1px solid #a4a4a4;
+      cursor: pointer;
+      width: 168px;
+      margin-top: 40px;
+      margin-bottom: 96px;
+    }
 
-.x {
-  margin-top: 6px;
-  margin-right: 22px;
-}
+    &__arrow {
+      margin-left: 20px;
+    }
+  }
 
-.product__info__item {
-  margin-bottom: 6px;
-  color: #575757;
-  font-size: 22px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
+  &__text {
+    color: #000;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
 
-.product__price {
-  color: $color__site;
-}
+  &__info {
+    margin-left: 128px;
+    &__head {
+      margin-bottom: 22px;
+    }
 
-.product__title {
-  color: #222;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  width: 262px;
+    &__title {
+      margin-bottom: 22px;
+    }
+
+    &__ul {
+      list-style: none;
+      &__li {
+        margin-bottom: 16px;
+      }
+    }
+    
+    &__ul li:before {
+      content: '✓';
+      margin-right: 24px;
+    }
+  }
 }
