@@ -1059,6 +1059,9 @@ body {
   .reg__input {
     max-width: 50%;
   }
+  .product__container {
+    margin: 0;
+  }
 }
 @media (max-width: 767px) and (min-width: 320px) {
   .container {
@@ -1183,5 +1186,8 @@ body {
   }
   .reg__info__ul {
     margin-bottom: 96px;
+  }
+  .product__container {
+    margin: 0;
   }
 }/*# sourceMappingURL=style.css.map */
